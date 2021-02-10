@@ -1,0 +1,1066 @@
+
+@font-face {
+    font-family: Montserrat; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+@font-face {
+    font-family: Montserrat-Bold; /* Имя шрифта */
+    src: url(../fonts/Montserrat-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+html {
+scroll-behavior: smooth;
+}
+
+body {
+margin: 0;
+padding: 0;
+
+font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+}
+/* menu */
+.out {
+transform: translateY(-100%);
+}
+nav {
+ 
+position: fixed;
+width: 100%;
+z-index: 10;
+background: rgba( 45, 43, 43, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+backdrop-filter: blur( 3.0px );
+-webkit-backdrop-filter: blur( 3.0px );
+border-bottom: 1px solid rgba( 255, 255, 255, 0.18 );
+
+transition: all 0.5s ease-in;
+}
+.nav_open {
+padding-bottom: 100vh;
+}
+.menu {
+display: flex;
+color: white;
+justify-content: space-between;
+
+
+}
+.logo_box {
+display: flex;
+}
+.logo {
+width: 70px;
+}
+.logo_text {
+text-transform: uppercase;
+padding-left: 15px;
+padding-top: 10px;
+font-family: 'Montserrat', sans-serif;
+}
+.phone_box {
+margin-top: 10px;
+display: flex;
+}
+.phone_text {
+margin-top: 0;
+}
+.phb_icon {
+padding-top: 25px;
+display: none;
+}
+.phone {
+margin-bottom: 0;
+font-size: 22px;
+}
+
+/* menu eng */
+
+.bg {
+height: 680px;
+position: relative;
+}
+.bg_img {
+width: 100%;
+margin: 0;
+padding: 0;
+filter: brightness(40%);
+clip-path: polygon(0 0, 1600px 0, 1600px 85%, 0 70%);
+}
+figure {
+margin: 0;
+}
+
+ figcaption {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+ 
+
+
+.main_box {
+display: flex;
+justify-content: space-between;
+color: white;
+margin-top: 170px;
+}
+.main_btn_box {
+display: flex;
+}
+.sticker_box {
+display: flex;
+margin-top: 50px;
+justify-content: space-between;
+
+}
+.st_top_box {
+display: flex;
+
+}
+
+.main_title {
+margin-top: 60px;
+font-size: 24px;
+}
+.main_subtitle {
+text-transform: uppercase;
+font-size: 36px;
+padding-top: 20px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.main_btn_box {
+margin-top: 70px;
+}
+.btn_bg {
+text-decoration: none;
+color: white;
+
+text-shadow: 3px 2px 3px rgba(0,0,0,.2);
+padding: 10px 15px;
+border-radius: 50px;
+background: rgba( 233, 0, 25, 0.65 );
+box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+backdrop-filter: blur( 5.0px );
+-webkit-backdrop-filter: blur( 5.0px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.btn_bg:hover {
+background: rgba(131, 2, 15, 0.65);
+
+}
+.btn_trnsp {
+text-shadow: 3px 2px 3px rgba(0,0,0,.2);
+text-decoration: none;
+padding: 8px 13px;
+border-radius: 50px;
+border: 2px solid #E90019;
+color: white;
+cursor: pointer;
+margin-left: 35px;
+backdrop-filter: blur( 3.0px );
+-webkit-backdrop-filter: blur( 3.0px );
+background: rgba( 45, 43, 43, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+}
+.btn_trnsp:hover {
+background: rgba(131, 2, 15, 0.65);
+}
+.sticker {
+width: 175px;
+height: 175px;
+background: white;
+border-radius: 100%;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+.number {
+
+text-shadow: #e0e0e0 2px 2px 0;
+width: 85px;
+height: 85px;
+background: white;
+top:-5px;
+right: 5px;
+color: black;
+text-align: center;
+position: relative;
+backdrop-filter: blur( 3.0px );
+-webkit-backdrop-filter: blur( 3.0px );
+background: rgba( 45, 43, 43, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.37 );
+border-top: 3px solid rgba( 52,214,221, 100 );
+border-left: 3px solid rgba( 52,214,221, 100 );
+border-bottom: 3px solid rgba( 255, 255, 255, 0.18 );
+border-right: 2px solid rgba( 255, 255, 255, 0.18 );
+}
+
+
+.n1 {
+margin: 0;
+position: absolute;             
+top: 50%;
+left: 10%;                         
+transform: translate(0, -50%);
+font-size: 24px;
+font-family: 'Montserrat-Bold', sans-serif;
+
+}
+
+.n2 {
+margin: 0;
+position: absolute;             
+top: 50%;
+left: 30%;                         
+transform: translate(0, -50%);
+font-size: 36px;
+font-family: 'Montserrat-Bold', sans-serif;
+
+}
+.st_icon {
+padding-left: 15px;
+}
+.st_text {
+color: black;
+text-align: center;
+padding-top: 10px;
+}
+.profile {
+margin-top: 100px;
+text-transform: uppercase;
+background: #000;
+width: 300px;
+padding: 10px;
+font-size: 45px;
+color: white;
+text-align: center;
+border-bottom: 5px solid  #E90019;
+}
+.pr_title {
+text-align: center;
+font-size: 42px;
+}
+.pr_text {
+text-align: center;
+font-size: 24px;
+padding-bottom: 150px;
+}
+.popup {
+position: fixed;
+z-index: 99900;
+width: 100%;
+height: 100vh;
+background: rgba(0,0,0,0.95);
+opacity: 0;
+visibility: hidden;
+transition: all 0.8s ease;
+}
+.popup_info {
+color: white;
+margin: 0 auto;
+text-align: center;
+position: relative;
+top: 20%
+}
+.popup_open {
+opacity: 1;
+visibility: visible;
+}
+.pop_title {
+font-size: 42px;
+}
+.pop_subtitle {
+font-size: 36px;
+}
+.pop_number {
+font-size: 66px;
+}
+
+.black_box {
+  background: rgb(15, 13, 13);
+  position: relative;
+  z-index: 1;
+    background-image: url(..//img/noise.png);
+    background-repeat: repeat;
+    background-position: 50% 50%;
+}
+.black_box:before, .black_box:after {
+  background: inherit;
+  content: "";
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+
+}
+.black_box:before {
+  top: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 100% 0;
+}
+.black_box:after {
+  bottom: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+}
+
+.black_box {
+  color: #fff;
+  font-family: "Fira Sans", sans-serif;
+  margin: 50px 0;
+  
+  text-align: center;
+}
+.bb_title {
+padding: 50px 0;
+font-size: 38px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.bb_card {
+display: flex;
+justify-content: space-between;
+padding-bottom: 50px;
+}
+.card {
+background: white;
+width: 380px;
+height: 195px;
+color: #000;
+box-shadow: 7px 7px 0px #E90019, 0px 4px 4px rgba(0, 0, 0, 0.25), -7px -7px 0px #34D6DD;
+}
+.card_title {
+padding: 25px 0;
+font-size: 25px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.wb_title {
+text-align: center;
+font-size: 38px;
+font-family: 'Montserrat-Bold', sans-serif;
+padding: 50px 0;
+}
+.persone_box {
+display: flex;
+justify-content: space-between;
+text-align: center;
+padding-bottom: 100px;
+}
+.prsn_name {
+padding: 25px 0;
+font-size: 25px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.prsn_info {
+width: 252px;
+}
+
+.places_box {
+display: flex;
+justify-content: center;
+padding-bottom: 100px;
+}
+.element_box {
+display: flex;
+padding: 0 25px;
+}
+.el1 {
+width: 15px;
+height: 15px;
+background: #E90019;
+}
+.el2 {
+width: 15px;
+height: 190px;
+background:#34D6DD;
+}
+.el3 {
+width: 15px;
+height: 350px;
+background: #E90019;
+}
+.pl_title {
+padding: 25px 0;
+font-size: 45px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.pl_subtitle {
+font-size: 25px;
+padding-bottom: 25px;
+}
+.pl_number {
+font-size: 65px;
+padding-bottom: 25px;
+}
+.wb_subtitle {
+text-align: center;
+padding-bottom: 100px;
+}
+.club_box {
+display: flex;
+justify-content: space-between;
+text-align: center;
+padding-bottom: 100px;
+}
+.club_name {
+padding: 25px 0;
+font-size: 25px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.club_info {
+width: 250px;
+}
+.image-slider {
+padding: 0 50px;
+}
+
+.image-slider_image {
+text-align: center;
+}
+.image-slider_image img {
+max-width: 100%;
+}
+.image-slider .swiper-button-prev::after,
+.image-slider .swiper-button-next::after{
+color: #fff;
+font-size: 80px;
+}
+
+
+
+.wrapper {
+padding: 10px;
+padding-bottom: 100px;
+
+}
+.bb_slider {
+padding-bottom: 100px;
+}
+.image-slider2 .swiper-button-prev::after,
+.image-slider2 .swiper-button-next::after{
+color: #000;
+font-size: 50px;
+}
+
+
+.preloader {
+position: fixed;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: black;
+z-index: 10000;
+transition: 1.5s all ease-in;
+opacity: 1;
+visibility: visible;
+}
+.done {
+opacity: 0;
+visibility: hidden;
+}
+
+.pre_logo_box {
+left: 50%;
+top: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+}
+.pre_logo_box {
+color: white;
+display: flex;
+}
+.btn_footer {
+margin-top: 50px;
+}
+.footer_box {
+padding-top: 100px;
+display: flex;
+justify-content: space-between;
+}
+.contact_box {
+text-align: left;
+}
+.soc_icon {
+padding: 0 25px;
+}
+
+.black_box_footer {
+  color: #fff;
+  background: #000;
+  font-family: "Fira Sans", sans-serif;
+  
+  padding-bottom: 50px;
+  text-align: center;
+}
+.form_section {
+background: #000;
+}
+.form_box {
+max-width: 550px;
+margin: 0 auto;
+color: white;
+padding: 30px 0;
+
+
+}
+.form_title {
+font-size: 40px;
+font-family: 'Montserrat-Bold', sans-serif;
+margin-bottom: 30px;
+text-align: center;
+}
+.form_item {
+margin-bottom: 20px;
+}
+.form_label {
+font-size: 18px;
+display: block;
+margin-bottom: 10px;
+}
+.form_input {
+height: 50px;
+
+border-radius: 5px;
+width: 100%;
+font-size: 18px;
+transition: all 0.5s ease 0s;
+}
+textarea.form_input {
+min-height: 120px;
+resize: vertical;
+
+}
+
+.file_item {
+  position: relative;
+}
+.file_input {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+font-size: 0;
+cursor: pointer;
+}
+.file_button {
+display: inline-flex;
+min-height: 40px;
+border-radius: 30px;
+justify-content: center;
+align-items: center;
+background: #34D6DD;
+color: black;
+padding: 0 20px;
+}
+.filee_preview {
+display: inline-block;
+max-width: 100px;
+padding-top: 10px;
+}
+.filee_preview img {
+  max-width: 100%;
+}
+.checkbox_input {
+display: none;
+}
+.checkbox_input:checked + .checkbox_label::after {
+transform: scale(1);
+}
+
+.checkbox_label {
+font-size: 16px;
+line-height: 140%;
+display: inline-flex;
+align-items: center;
+position: relative;
+cursor: pointer;
+}
+.checkbox_label::before {
+content: "";
+align-self: flex-start;
+flex: 0 0 24px;
+height: 24px;
+background: white;
+border-radius: 4px;
+margin: 0px 10px 0px 0px;
+}
+.checkbox_label::after {
+transition: transform 0.5s ease 0s;
+content: "";
+width: 16px;
+height: 16px;
+position: absolute;
+top: 4px;
+left: 4px;
+background: #E90019;
+border-radius: 4px;
+transform: scale(0);
+}
+
+.checkbox_label a {
+color:  #E90019;
+}
+
+.form_button {
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 60px;
+background:  #E90019;
+color: black;
+font-size: 18px;
+text-transform: uppercase;
+letter-spacing: 2px;
+font-family: 'Montserrat-Bold', sans-serif;
+cursor: pointer;
+border-radius: 100px;
+border: none;
+transition: background 0.5s ease 0s;
+position: relative;
+top: 0;
+}
+.form_button:hover {
+background: #42060c;
+}
+.form_button:active {
+top: 3px;
+}
+.form_box * {
+outline: none;
+}
+.form_input:focus {
+box-shadow: 0 0 15px   #34D6DD;
+}
+
+.form_input._error {
+box-shadow: 0 0 15px    #E90019;
+}
+.checkbox._error .checkbox_label::before{
+ box-shadow: 0 0 15px    #E90019;
+}
+.form_body {
+position: relative;
+}
+.form_body::after {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+visibility: hidden;
+background: url('../img/load.gif') center / 50px no-repeat;
+transition: all 0.5s ease 0s;
+}
+
+.form_body._sanding::after {
+opacity: 1;
+visibility: visible;
+}
+.form_item label {
+text-align: left;
+font-size: 18px;
+font-family: 'Montserrat', sans-serif;
+}
+.form_box {
+padding-top: 50px;
+}
+@media (max-width: 1825px){ 
+.bg_img {
+clip-path: polygon(0 0, 1900px 0, 1900px 75%, 0 90%);
+}
+
+}
+
+@media (max-width:1225px){ 
+.bg_img {
+clip-path: polygon(0 0, 1900px 0, 1900px 95%, 0 85%);
+}
+
+}
+
+@media (max-width:768px){ 
+.bg_img {
+height: 600px;
+clip-path: polygon(0 0, 1900px 0, 1900px 100%, 0 100%);
+}
+.container {
+width: 750px;
+}
+
+.main_box {
+text-align: center;
+justify-content: center;
+}
+.main_img {
+display: none;
+}
+.main_btn_box {
+display: block;
+}
+.sticker_box {
+padding-top: 50px;
+}
+
+.card {
+text-align: center;
+margin: 30px auto;
+
+}
+.bb_card {
+display: block;
+
+}
+.persone_box {
+display: block;
+}
+.prsn {
+padding-bottom: 50px;
+}
+
+.prsn_info {
+text-align: center;
+margin: 0 auto;
+}
+.club_box {
+display: block;
+}
+.club_info {
+margin: 0 auto;
+}
+.club {
+padding-bottom: 50px;
+}
+}
+@media (max-width:480px){ 
+.black_box:before {
+transform: none;
+}
+.black_box:after {
+transform: none;
+}
+.card_padding {
+padding-bottom: 100px !important;
+}
+.bb_card {
+padding-bottom: 0;
+}
+.bg_img {
+height: 600px;
+clip-path: polygon(0 0, 1900px 0, 1900px 100%, 0 100%);
+}
+.container {
+width: 470px;
+}
+.menu {
+padding: 0 10px;
+}
+.logo {
+width: 50px;
+}
+.logo_text {
+font-size: 10px;
+width: 100px;
+padding-bottom: 5px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.phb_icon {
+display: block;
+padding-top: 15px;
+}
+.phb_text {
+display: none;
+}
+
+.main_title {
+padding-top: 700px;
+margin: 0 auto;
+font-size: 16px;
+width: 300px;
+text-align: center;
+}
+.sticker_box {
+display: block;
+margin-top: 100px;
+}
+.sticker{
+margin: 0 auto;
+margin-bottom: 50px;
+}
+.box2 {
+padding-top: 600px;
+}
+.form_box {
+max-width: 350px;
+}
+.footer_box {
+display: block;
+}
+.contact_box {
+text-align: center;
+padding-bottom: 50px;
+}
+.pl_title {
+font-size: 32px;
+}
+.pl_subtitle {
+font-size: 18px;
+}
+}
+
+@media (max-width:415px){ 
+
+.main {
+padding: 0;
+}
+.bg_img {
+height: 550px;
+}
+.container {
+width: 400px;
+}
+.main_title {
+padding-top: 550px;
+}
+
+.main_subtitle {
+margin: 0 auto;
+width: 300px;
+font-size: 27px;
+}
+.main_btn_box a {
+display: block;
+margin: 15px;
+}
+.profile {
+width: 250px;
+font-size: 28px;
+margin: 0 auto;
+}
+.pr_title {
+font-size: 18px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.pr_text {
+font-size: 16px;
+padding-bottom: 0;
+}
+.bb_title {
+font-size: 20px;
+}
+.card {
+width: 350px;
+height: 200px;
+}
+.card_title {
+font-size: 16px;
+}
+._card_text {
+font-size: 18px;
+}
+.places_box {
+padding-bottom: 0;
+}
+.wb_title {
+font-size: 23px;
+}
+.persone_box {
+padding-bottom: 0;
+}
+.prsn_name {
+font-size: 18px;
+}
+.prsn_info {
+font-size: 16px;
+}
+.club_name {
+font-size: 18px;
+}
+.club_info {
+font-size: 16px;
+}
+.wb_subtitle {
+font-size: 18px;
+padding-bottom: 0;
+}
+.club_box {
+padding-bottom: 0;
+}
+.form_box {
+max-width: 250px;
+
+}
+
+
+.el1 {
+width: 10px;
+
+
+}
+.el2 {
+width: 10px;
+
+
+}
+.el3 {
+width: 10px;
+
+
+}
+.img_prsn {
+width: 200px;
+}
+.img_club {
+width: 200px;
+}
+
+.soc_icon {
+width: 50px;
+}
+span {
+display: block;
+}
+}
+
+@media (max-width:376px){ 
+
+.main {
+padding: 0;
+}
+.bg_img {
+height: 550px;
+}
+.container {
+width: 350px;
+}
+.main_title {
+padding-top: 550px;
+}
+
+.main_subtitle {
+margin: 0 auto;
+width: 250px;
+font-size: 23px;
+}
+.main_btn_box a {
+display: block;
+margin: 15px;
+}
+.profile {
+width: 250px;
+font-size: 28px;
+margin: 0 auto;
+}
+.pr_title {
+font-size: 18px;
+font-family: 'Montserrat-Bold', sans-serif;
+}
+.pr_text {
+font-size: 16px;
+padding-bottom: 0;
+}
+.bb_title {
+font-size: 20px;
+}
+.card {
+width: 300px;
+height: 200px;
+}
+.card_title {
+font-size: 16px;
+}
+._card_text {
+font-size: 14px;
+}
+.places_box {
+padding-bottom: 0;
+}
+.wb_title {
+font-size: 20px;
+}
+.wb_subtitle {
+padding-bottom: 50px !important;
+}
+.persone_box {
+padding-bottom: 0;
+}
+.prsn_name {
+font-size: 16px;
+}
+.prsn_info {
+font-size: 14px;
+}
+.club_name {
+font-size: 16px;
+}
+.club_info {
+font-size: 14px;
+}
+.wb_subtitle {
+font-size: 16px;
+padding-bottom: 0;
+}
+.club_box {
+padding-bottom: 0;
+}
+.form_box {
+max-width: 250px;
+
+}
+
+
+.el1 {
+width: 10px;
+
+
+}
+.el2 {
+width: 10px;
+
+
+}
+.el3 {
+width: 10px;
+
+
+}
+.img_prsn {
+width: 200px;
+}
+.img_club {
+width: 200px;
+}
+
+.soc_icon {
+width: 50px;
+}
+span {
+display: block;
+}
+}
+
+@media (max-width:321px){
+.container {
+width: 300px;
+}
+.soc_icon {
+width: 45px;
+}
+.card {
+width: 250px;
+}
+
+} 
